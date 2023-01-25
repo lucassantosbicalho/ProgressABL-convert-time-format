@@ -1,8 +1,8 @@
 FUNCTION fcConvertTimeFormat RETURNS CHARACTER (INPUT pNumericTime AS INTEGER, INPUT pFormat AS CHARACTER).
-    // Converte numeric time to format HHhMM or HHMM 
-    // INPUT pNumericTime = Time in numeric format. Ie. 08h00 = 8 * 3600 = 28800
-    // INPUT pFormat = "h" ou "". Se "h" funcao retorna HHhMM. Se "" funcao retorna HHMM
-    // OUTPUT hora em formato char do tipo HHhMM ou HHMM
+    // Convert numeric time to format HHhMM or HHMM 
+    // INPUT pNumericTime = Time in numeric format. (e.g. 08h00 = 8 * 3600 = 28800)
+    // INPUT pFormat = "h" ou "".
+    // OUTPUT time in char formatted in HHhMM or HHMM
     DEFINE VARIABLE intH AS INTEGER NO-UNDO.
     DEFINE VARIABLE intM AS INTEGER NO-UNDO.
     DEFINE VARIABLE decH AS DECIMAL NO-UNDO.
